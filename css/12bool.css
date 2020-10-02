@@ -1,5 +1,5 @@
    .container{
-    max-width: 1170px;
+    max-width: 1392px;
     margin: auto;
   }
 
@@ -89,7 +89,7 @@
     .col-lg-offset-12{
       margin-left: calc((100% / 12) * 12)
     }
-    
+
     .col-lg-none{
       display: none;
     }
