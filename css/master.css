@@ -11,8 +11,13 @@ html{
 }
 
 /* HEADER */
-header .top_header {
+.top_header {
+  width: 100%;
   line-height: 67px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+  top: 0;
 }
 
 .logo img{
@@ -77,8 +82,34 @@ ul li a{
 .fa-bars{
   vertical-align: middle;
   margin-right: 35px;
+  cursor: pointer;
 }
 
+/* MAIN */
+
+.v-widget{
+  background-color: #fafafa;
+  padding: 0 1rem;
+}
+
+.helbizgo,.helbizbike{
+  text-align: center;
+  margin: 40px 15px;
+}
+
+.v-widget img{
+  /* height: 300px; */
+  width: 100%;
+}
+
+.v-widget a {
+  text-decoration: none;
+}
+
+.v-widget h4 {
+  margin: 32px 0;
+  font-weight: 600;
+}
 
 /* DEBUG */
 
