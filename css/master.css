@@ -24,18 +24,19 @@ html{
   width: 90px;
 }
 
-ul li{
+.top_header ul li{
   list-style: none;
   display: inline;
   line-height: 67px;
 }
 
-ul li a{
+.top_header ul li a{
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.7rem;
   margin-left: 1.5rem;
+  color: black;
 }
 
 .languages > li:not(:first-of-type)::before{
@@ -71,7 +72,8 @@ ul li a{
   display: block;
 }
 
-.hero_title img{
+.hero_title img,
+.app-store img{
   height: 35px;
 }
 
@@ -156,9 +158,23 @@ ul li a{
 }
 
 .garden{
-  height: 450px;
-  width: 65%;
+  height: 550px;
   background-image: url('../img/scooter.jpg');
+}
+
+@media screen and (max-width: 992px) {
+  .gardern{
+    background-position: center;
+  }
+
+  .p-relative {
+    position: static;
+  }
+
+  .container {
+    position: relative;
+  }
+
 }
 
 .description{
@@ -187,20 +203,98 @@ ul li a{
 
 .get{
   background-color: #354655;
-  margin-left: 80px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
   color: #fff;
+  height: 520px;
 }
 
 .text-get h1{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .text-get span{
   padding: 15px 0;
+}
+
+.text-get a{
+  padding: 15px 0;
+}
+
+.find{
+  background-image: url('../img/city.jpg');
+  color: #fff;
+  height: 520px;
+  background-size: cover;
+
+}
+
+.social{
+  background-image: url('../img/social-banner.jpg');
+  height: 390px;
+  background-size: contain;
+  position: relative;
+}
+
+.family{
+  background-color: #FAFAFA;
+  text-align: center;
+  padding: 25px 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.family {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+}
+
+.family span{
+  display: block;
+}
+
+.family i{
+  font-size: 1.2rem;
+  letter-spacing: 1rem;
+}
+
+.main-footer{
+  padding-top: 70px;
+}
+
+.main-footer img{
+  width: 100px;
+}
+
+.main-footer ul{
+  list-style: none;
+  color: white;
+}
+
+.main-footer ul li a{
+  color: grey;
+  line-height: 2.5rem;
+}
+
+.terms{
+  color: white;
+  padding-top: 70px;
+}
+
+.terms i:not(:last-of-type){
+  letter-spacing: 1rem;
+  font-size: 1.5rem;
+}
+
+.law{
+  font-size: 0.7rem;
+}
+
+.app-store{
+  text-align: center;
+  padding: 70px;
 }
 
 /* DEBUG */
@@ -226,5 +320,8 @@ ul li a{
 
 a{
   text-decoration: none;
-  color: #fff;
+}
+
+.black-bg{
+  background-color: black;
 }
